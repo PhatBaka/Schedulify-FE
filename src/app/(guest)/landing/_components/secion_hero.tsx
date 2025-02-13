@@ -4,7 +4,7 @@ const LandingHero = () => {
 	return (
 		<section className='w-screen h-fit flex flex-col justify-center items-center'>
 			<Image
-				className='w-screen h-[400px] object-cover object-center animate-fade animate-once'
+				className='w-screen h-[300px] lg:h-[400px] object-cover object-center animate-fade animate-once'
 				src='/images/landing-banner.webp'
 				alt='hero'
 				unoptimized={true}

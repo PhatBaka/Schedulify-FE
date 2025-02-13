@@ -1,11 +1,16 @@
 'use client';
 import LoadingComponent from '@/commons/loading';
 import { useAppContext } from '@/context/app_provider';
-import { adminPaths, schoolManagerPaths, teacherDepartmentHeadPaths, teacherPaths } from '@/utils/constants';
+import {
+	adminPaths,
+	schoolManagerPaths,
+	teacherDepartmentHeadPaths,
+	teacherPaths,
+} from '@/utils/constants';
 import { redirect } from 'next/navigation';
 import { useMemo } from 'react';
 
-export default function Home(): JSX.Element {
+export default function Home() {
 	const { userRole } = useAppContext();
 
 	useMemo(() => {

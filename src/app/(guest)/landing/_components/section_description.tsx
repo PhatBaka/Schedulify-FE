@@ -3,16 +3,16 @@ import Link from 'next/link';
 
 const LandingDescription = () => {
 	return (
-		<section className='relative min-h-[500px] flex flex-row justify-end px-[10vw]'>
-			<div className='w-fit h-fit bg-primary-400 absolute top-[5%] left-[10%] text-white px-[5vw] py-[5vh] flex flex-col justify-start items-end'>
-				<h1 className='text-[2.2vw] animate-fade-right animate-once'>
+		<section className='relative md:min-h-[500px] flex flex-row justify-end px-[10vw]'>
+			<div className='w-fit h-fit bg-primary-400 absolute top-[5%] left-[10%] text-white px-[5vw] py-[2vh] md:py-[5vh] flex flex-col justify-start items-end'>
+				<h1 className='text-[1.2rem] lg:text-[2.2vw] animate-fade-right animate-once'>
 					Hệ thống sắp xếp
 				</h1>
-				<h1 className='text-[2.2vw] animate-fade-right animate-once animate-delay-[500ms]'>
+				<h1 className='text-[1.2rem] lg:text-[2.2vw] animate-fade-right animate-once animate-delay-[500ms]'>
 					Thời khóa biểu tự động
 				</h1>
 			</div>
-			<div className='overflow-hidden w-[200px] h-[250px] absolute bottom-0 left-[15%]'>
+			<div className='hidden md:block absolute bottom-0 left-[15%] overflow-hidden w-[200px] h-[250px]'>
 				<Image
 					className='w-full h-full object-right-top aspect-auto -scale-x-100'
 					src='/images/landing-schedule-decorator1.jpg'
@@ -23,7 +23,7 @@ const LandingDescription = () => {
 					loading='lazy'
 				/>
 			</div>
-			<div className='overflow-hidden w-[300px] h-[350px] absolute bottom-[10%] left-[30%] z-[-1]'>
+			<div className='hidden md:block absolute bottom-[10%] left-[30%] z-[-1] overflow-hidden w-[300px] h-[350px]'>
 				<Image
 					className='w-full h-full object-none object-right-top'
 					src='/images/landing-schedule-decorator2.png'
@@ -34,25 +34,24 @@ const LandingDescription = () => {
 					loading='lazy'
 				/>
 			</div>
-			<div className='w-[35vw] h-full min-h-[500px] pb-[5%] flex flex-col justify-between items-end gap-10'>
+			<div className='w-full md:w-[35vw] h-full md:min-h-[500px] pb-[5%] flex flex-col justify-between items-end gap-10'>
 				<Image
-					className='w-[60%] h-fit object-contain'
+					className='w-[40%] md:w-[60%] h-fit object-contain -z-10'
 					src='/images/landing-decorator-1.png'
 					alt='dec'
 					width={500}
 					height={200}
 					loading='lazy'
 				/>
-				<div className='w-full h-fit pr-[20%] flex flex-col justify-between items-start gap-4'>
+				<div className='w-full h-fit md:pr-[20%] flex flex-col justify-between items-start gap-4'>
 					<p className='text-body-large font-normal text-justify opacity-80'>
-						Với tôn chỉ{' '}
-						<span className='font-semibold'>“làm mới để làm khác”</span>,
-						Schedulify tự tin sẽ mang tới những trải nghiệm đặc tốt nhất và
-						duy nhất dành cho những Trường học sử dụng hệ thống của chúng tôi.
+						Với tôn chỉ <span className='font-semibold'>“làm mới để làm khác”</span>, Schedulify tự
+						tin sẽ mang tới những trải nghiệm đặc tốt nhất và duy nhất dành cho những Trường học sử
+						dụng hệ thống của chúng tôi.
 					</p>
 					<Link
 						href={'#'}
-						className='flex justify-center gap-2 items-center border-b-2 border-primary-600 text-lg bg-gray-50 lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-primary-400 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden group'
+						className='flex justify-center gap-2 items-center border-b-2 border-primary-600 text-md bg-gray-50 lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-primary-400 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden group'
 					>
 						Tìm hiểu thêm
 						<svg

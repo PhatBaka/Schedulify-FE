@@ -37,9 +37,9 @@ export default function RootLayout({
 	}
 
 	return (
-		<html lang='vi'>
+		<html lang='vi' style={{ overflow: 'hidden' }}>
 			<body
-				className={`${inter.className} antialiased w-screen h-screen overflow-x-hidden scroll-smooth`}
+				className={`${inter.className} antialiased relative w-screen h-screen overflow-x-hidden scroll-smooth`}
 			>
 				<NotificationProvider
 					sessionToken={sessionToken?.value ?? ''}

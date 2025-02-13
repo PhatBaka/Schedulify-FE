@@ -12,35 +12,32 @@ const LandingBanner = () => {
 	return (
 		<section
 			id='banner'
-			className='w-screen h-[250px] flex flex-row justify-between items-center px-[8vw] overflow-visible'
+			className='w-screen h-fit flex flex-col md:flex-row justify-between items-center gap-[5vh] px-[5vw] overflow-visible'
 		>
 			<div
 				id='slogan'
-				className='w-1/2 h-full flex flex-col pt-4 justify-start items-center'
+				className='w-full md:w-[40%] lg:w-1/2 h-full flex flex-col pt-4 justify-start items-center lg:-translate-y-[50%]'
 			>
-				<h1 className='text-[2.8vw] animate-fade-up animate-once'>
+				<h1 className='text-[1.9rem] md:text-[2rem] lg:text-[2.8vw] sm:text-[2rem] animate-fade-up animate-once'>
 					Thời gian hài hòa
 				</h1>
-				<h1 className='text-[3.2vw] font-bold text-primary-500 animate-fade-up animate-once animate-delay-500'>
+				<h1 className='text-[2.2rem] md:text-[2rem] lg:text-[3vw] font-bold text-primary-500 animate-fade-up animate-once animate-delay-500'>
 					Tri thức vươn xa
 				</h1>
 			</div>
+
 			<div
 				id='scrollable'
-				className='relative w-1/2 h-full flex flex-col gap-10 items-center justify-start overflow-visible'
+				className='relative w-full md:w-[60%] lg:w-1/2 h-fit min-h-[45vh] flex flex-col gap-10 items-center justify-start overflow-visible'
 			>
 				<section
-					className={`absolute inset-0 transition-all duration-500 ease-in-out transform 
-							${
-								currentSection === 1
-									? 'opacity-100 translate-y-0'
-									: 'opacity-0 translate-y-10 z-[-1]'
-							}`}
+					className={`absolute w-[80%] inset-0 transition-all duration-500 ease-in-out transform 
+							${currentSection === 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 z-[-1]'}`}
 				>
 					<h3 className='text-title-small-strong mb-3 animate-fade-up animate-once'>
 						Quản lý Thời khóa biểu
 					</h3>
-					<ul className='list-disc pl-4 text-body-large font-normal opacity-80 flex flex-col gap-2'>
+					<ul className='list-disc pl-4 text-body-large font-normal opacity-80 flex flex-col gap-1 md:gap-2'>
 						<li className='animate-fade-up animate-once animate-delay-500'>
 							Khởi tạo TKB nhanh chóng.
 						</li>
@@ -56,7 +53,7 @@ const LandingBanner = () => {
 					</ul>
 					<Link
 						href={'#'}
-						className='w-[25%] min-w-[12vw] truncate !mt-3 flex justify-center gap-2 items-center border-b-2 border-primary-600 text-lg bg-gray-50 lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-primary-400 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden group'
+						className='w-[40vw] md:w-[50%] lg:w-[30%] truncate !mt-3 flex justify-center gap-2 items-center border-b-2 border-primary-600 text-lg bg-gray-50 lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-primary-400 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden group'
 					>
 						Khám phá
 						<svg
@@ -72,12 +69,8 @@ const LandingBanner = () => {
 					</Link>
 				</section>
 				<section
-					className={`absolute inset-0 transition-all duration-500 ease-in-out transform 
-							${
-								currentSection === 2
-									? 'opacity-100 translate-y-0'
-									: 'opacity-0 translate-y-10 z-[-1]'
-							}`}
+					className={`absolute w-[80%] inset-0 transition-all duration-500 ease-in-out transform 
+							${currentSection === 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 z-[-1]'}`}
 				>
 					<h3 className='text-title-small-strong mb-3'>Quản lý lớp học</h3>
 					<ul className='list-disc pl-4 text-body-large font-normal opacity-80 flex flex-col gap-2'>
@@ -88,7 +81,7 @@ const LandingBanner = () => {
 					</ul>
 					<Link
 						href={'#'}
-						className='w-[25%] min-w-[12vw] truncate !mt-3 flex justify-center gap-2 items-center border-b-2 border-primary-600 text-lg bg-gray-50 lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-primary-400 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden group'
+						className='w-[40vw] md:w-[50%] lg:w-[30%] min-w-[12vw] truncate !mt-3 flex justify-center gap-2 items-center border-b-2 border-primary-600 text-lg bg-gray-50 lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-primary-400 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden group'
 					>
 						Khám phá
 						<svg
@@ -104,12 +97,8 @@ const LandingBanner = () => {
 					</Link>
 				</section>
 				<section
-					className={`absolute inset-0 transition-all duration-500 ease-in-out transform 
-							${
-								currentSection === 3
-									? 'opacity-100 translate-y-0'
-									: 'opacity-0 translate-y-10 z-[-1]'
-							}`}
+					className={`absolute w-[80%] inset-0 transition-all duration-500 ease-in-out transform 
+							${currentSection === 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 z-[-1]'}`}
 				>
 					<h3 className='text-title-small-strong mb-3'>Quản lý giáo viên</h3>
 					<ul className='list-disc pl-4 text-body-large font-normal opacity-80 flex flex-col gap-2'>
@@ -120,7 +109,7 @@ const LandingBanner = () => {
 					</ul>
 					<Link
 						href={'#'}
-						className='w-[25%] min-w-[12vw] truncate !mt-3 flex justify-center gap-2 items-center border-b-2 border-primary-600 text-lg bg-gray-50 lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-primary-400 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden group'
+						className='w-[40vw] md:w-[50%] lg:w-[30%] min-w-[12vw] truncate !mt-3 flex justify-center gap-2 items-center border-b-2 border-primary-600 text-lg bg-gray-50 lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-primary-400 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-1 overflow-hidden group'
 					>
 						Khám phá
 						<svg
@@ -139,10 +128,7 @@ const LandingBanner = () => {
 				{/* Switch Section Buttons */}
 				<div className='absolute right-0 flex flex-col items-center w-[20%] h-full py-[1%] overflow-visible'>
 					{[1, 2, 3].map((item, index) => (
-						<div
-							key={'banner' + index}
-							className='w-fit h-[50px] flex justify-center items-center'
-						>
+						<div key={'banner' + index} className='w-fit h-[50px] flex justify-center items-center'>
 							<IconButton onClick={() => switchSection(item)}>
 								<Radio
 									sx={{
