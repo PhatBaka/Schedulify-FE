@@ -23,23 +23,20 @@ const LandingSchools = () => {
 				height={250}
 				loading='lazy'
 			/>
-			<div className='mx-[10vw] h-full py-[3vh] flex flex-row justify-between items-center'>
-				<div className='w-[30%] h-full py-[5vh] flex flex-col justify-start items-start'>
-					<h4 className='text-title-small font-semibold opacity-70 mb-[5vh]'>
+			<div className='mx-[10vw] h-full md:py-[3vh] flex flex-col md:flex-row justify-between items-center'>
+				<div className='w-full md:w-[30%] h-full py-[5vh] flex flex-col justify-start items-start'>
+					<h4 className='text-[2rem] md:text-title-small font-semibold opacity-70 mb-[1vh] md:mb-[5vh]'>
 						Đối tác của chúng tôi
 					</h4>
-					<h1 className='text-title-1.5xl'>Những trường học</h1>
-					<h1 className='text-title-1.5xl'>Đang sử dụng</h1>
+					<h1 className='text-[1.7rem] md:text-title-1.5xl'>Những trường học</h1>
+					<h1 className='text-[1.7rem] md:text-title-1.5xl'>Đang sử dụng</h1>
 				</div>
-				<div className='w-[70%] h-full flex flex-row justify-start items-start'>
+				<div className='w-full md:w-[70%] h-full flex flex-row justify-start items-start'>
 					<div className='w-[95%] h-full flex flex-row justify-start items-start gap-5 overflow-hidden'>
 						{schoolData?.length ? (
 							<>
 								{schoolData.map((item, index) => (
-									<div
-										key={index}
-										className='w-[30%] h-full bg-primary-50'
-									>
+									<div key={index} className='w-[30%] h-full bg-primary-50'>
 										{isLoading ? (
 											<Skeleton
 												className='!w-full h-[60%]'
@@ -60,13 +57,9 @@ const LandingSchools = () => {
 										)}
 										<div className='w-full h-[25%] px-[5%] flex flex-col justify-center'>
 											<h4 className='text-body-medium-strong font-semibold opacity-80'>
-												{`${new Date(
-													item['update-date']
-												).getFullYear()}`}
+												{`${new Date(item['update-date']).getFullYear()}`}
 											</h4>
-											<h1 className='text-title-small-strong'>
-												{item.name}
-											</h1>
+											<h1 className='text-title-small-strong'>{item.name}</h1>
 										</div>
 									</div>
 								))}
@@ -93,12 +86,8 @@ const LandingSchools = () => {
 										/>
 									)}
 									<div className='w-full h-[25%] px-[5%] flex flex-col justify-center'>
-										<h4 className='text-body-medium-strong font-semibold opacity-80'>
-											2020
-										</h4>
-										<h1 className='text-title-small-strong'>
-											Trường THPT chuyên Hà Nội-Amsterdam
-										</h1>
+										<h4 className='text-body-medium-strong font-semibold opacity-80'>2020</h4>
+										<h1 className='text-title-small-strong'>Trường THPT chuyên Hà Nội-Amsterdam</h1>
 									</div>
 								</div>
 								<div className='w-[30%] h-full bg-primary-50'>
@@ -122,12 +111,8 @@ const LandingSchools = () => {
 										/>
 									)}
 									<div className='w-full h-[25%] px-[5%] flex flex-col justify-center'>
-										<h4 className='text-body-medium-strong font-semibold opacity-80'>
-											2010
-										</h4>
-										<h1 className='text-title-small-strong'>
-											Trường THPT Chuyên Lê Hồng Phong
-										</h1>
+										<h4 className='text-body-medium-strong font-semibold opacity-80'>2010</h4>
+										<h1 className='text-title-small-strong'>Trường THPT Chuyên Lê Hồng Phong</h1>
 									</div>
 								</div>
 								<div className='w-[30%] h-full bg-primary-50'>
@@ -151,12 +136,8 @@ const LandingSchools = () => {
 										/>
 									)}
 									<div className='w-full h-[25%] px-[5%] flex flex-col justify-center'>
-										<h4 className='text-body-medium-strong font-semibold opacity-80'>
-											2010
-										</h4>
-										<h1 className='text-title-small-strong'>
-											Trường THPT Chuyên Nguyễn Du
-										</h1>
+										<h4 className='text-body-medium-strong font-semibold opacity-80'>2010</h4>
+										<h1 className='text-title-small-strong'>Trường THPT Chuyên Nguyễn Du</h1>
 									</div>
 								</div>
 							</>

@@ -11,7 +11,7 @@ const LandingConstraints = () => {
 	};
 
 	return (
-		<section className='relative w-screen h-fit min-h-[500px] my-[3vh] overflow-visible'>
+		<section className='hidden md:block relative w-screen h-fit min-h-[500px] my-[3vh] overflow-visible'>
 			{/* Decorator */}
 			<Image
 				className='w-[10%] absolute bottom-0 left-0 h-fit object-contain'
@@ -25,18 +25,13 @@ const LandingConstraints = () => {
 			{/* Section 1 - Teacher */}
 			<section
 				className={`absolute w-screen min-h-[500px] flex flex-row justify-end px-[10vw] inset-0 transition-all duration-500 ease-in-out transform 
-							${
-								constraintSection === 1
-									? 'opacity-100 translate-y-0'
-									: 'opacity-0 translate-y-10 z-[-1]'
-							}`}
+							${constraintSection === 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 z-[-1]'}`}
 			>
 				{/* Title */}
 				<div className='absolute w-fit h-full top-0 left-[15%] flex flex-col justify-start items-end'>
 					<h1 className='text-[2.3vw] w-full text-left'>Ràng buộc cho</h1>
 					<h1 className='text-[2.3vw] font-semibold text-primary-600'>
-						<span className='text-tertiary-normal'>Giáo viên</span> trong
-						trường học{' '}
+						<span className='text-tertiary-normal'>Giáo viên</span> trong trường học{' '}
 					</h1>
 					<ul className='text-title-small-strong text-left flex flex-col gap-3 my-7'>
 						<li>Thời gian nghỉ (bận) của giáo viên</li>
@@ -80,8 +75,8 @@ const LandingConstraints = () => {
 				{/* Description */}
 				<div className='w-fit h-fit max-w-[20%] bg-primary-400 absolute bottom-0 right-[10%] text-white px-[3vw] py-[4vh] flex flex-col justify-start items-end'>
 					<p className='text-body-large font-normal text-justify opacity-90'>
-						Giáo viên là một trong những nhân tố quan trọng nhất ảnh hưởng đến
-						chất lượng giảng dạy. Vậy nên chúng tôi đặc biệt quan tâm
+						Giáo viên là một trong những nhân tố quan trọng nhất ảnh hưởng đến chất lượng giảng dạy.
+						Vậy nên chúng tôi đặc biệt quan tâm
 					</p>
 				</div>
 
@@ -91,18 +86,13 @@ const LandingConstraints = () => {
 			{/* Section 2 - Subject */}
 			<section
 				className={`absolute w-screen min-h-[500px] flex flex-row justify-end px-[10vw] inset-0 transition-all duration-500 ease-in-out transform 
-							${
-								constraintSection === 2
-									? 'opacity-100 translate-y-0'
-									: 'opacity-0 translate-y-10 z-[-1]'
-							}`}
+							${constraintSection === 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 z-[-1]'}`}
 			>
 				{/* Title */}
 				<div className='absolute w-fit h-full top-0 left-[15%] flex flex-col justify-start items-end'>
 					<h1 className='text-[2.3vw] w-full text-left'>Ràng buộc cho</h1>
 					<h1 className='text-[2.3vw] font-semibold text-primary-600'>
-						<span className='text-tertiary-normal'>Môn học</span> trong trường
-						học{' '}
+						<span className='text-tertiary-normal'>Môn học</span> trong trường học{' '}
 					</h1>
 					<ul className='text-title-small-strong text-left flex flex-col gap-3 my-7'>
 						<li>Thời gian nghỉ (bận) của giáo viên</li>
@@ -146,8 +136,8 @@ const LandingConstraints = () => {
 				{/* Description */}
 				<div className='w-fit h-fit max-w-[20%] bg-primary-400 absolute bottom-0 right-[10%] text-white px-[3vw] py-[4vh] flex flex-col justify-start items-end'>
 					<p className='text-body-large font-normal text-justify opacity-90'>
-						Giáo viên là một trong những nhân tố quan trọng nhất ảnh hưởng đến
-						chất lượng giảng dạy. Vậy nên chúng tôi đặc biệt quan tâm
+						Giáo viên là một trong những nhân tố quan trọng nhất ảnh hưởng đến chất lượng giảng dạy.
+						Vậy nên chúng tôi đặc biệt quan tâm
 					</p>
 				</div>
 
@@ -157,18 +147,13 @@ const LandingConstraints = () => {
 			{/* Section 3 - Room */}
 			<section
 				className={`absolute w-screen min-h-[500px] flex flex-row justify-end px-[10vw] inset-0 transition-all duration-500 ease-in-out transform 
-							${
-								constraintSection === 3
-									? 'opacity-100 translate-y-0'
-									: 'opacity-0 translate-y-10 z-[-1]'
-							}`}
+							${constraintSection === 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 z-[-1]'}`}
 			>
 				{/* Title */}
 				<div className='absolute w-fit h-full top-0 left-[15%] flex flex-col justify-start items-end'>
 					<h1 className='text-[2.3vw] w-full text-left'>Ràng buộc cho</h1>
 					<h1 className='text-[2.3vw] font-semibold text-primary-600'>
-						<span className='text-tertiary-normal'>Phòng học</span> trong
-						trường học{' '}
+						<span className='text-tertiary-normal'>Phòng học</span> trong trường học{' '}
 					</h1>
 					<ul className='text-title-small-strong text-left flex flex-col gap-3 my-7'>
 						<li>Thời gian nghỉ (bận) của giáo viên</li>
@@ -213,8 +198,8 @@ const LandingConstraints = () => {
 				{/* Description */}
 				<div className='w-fit h-fit max-w-[20%] bg-primary-400 absolute bottom-0 right-[10%] text-white px-[3vw] py-[4vh] flex flex-col justify-start items-end'>
 					<p className='text-body-large font-normal text-justify opacity-90'>
-						Giáo viên là một trong những nhân tố quan trọng nhất ảnh hưởng đến
-						chất lượng giảng dạy. Vậy nên chúng tôi đặc biệt quan tâm
+						Giáo viên là một trong những nhân tố quan trọng nhất ảnh hưởng đến chất lượng giảng dạy.
+						Vậy nên chúng tôi đặc biệt quan tâm
 					</p>
 				</div>
 
@@ -224,18 +209,13 @@ const LandingConstraints = () => {
 			{/* Section 4 - Curriculumn */}
 			<section
 				className={`absolute w-screen min-h-[500px] flex flex-row justify-end px-[10vw] inset-0 transition-all duration-500 ease-in-out transform 
-							${
-								constraintSection === 4
-									? 'opacity-100 translate-y-0'
-									: 'opacity-0 translate-y-10 z-[-1]'
-							}`}
+							${constraintSection === 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 z-[-1]'}`}
 			>
 				{/* Title */}
 				<div className='absolute w-fit h-full top-0 left-[15%] flex flex-col justify-start items-end'>
 					<h1 className='text-[2.3vw] w-full text-left'>Ràng buộc cho</h1>
 					<h1 className='text-[2.3vw] font-semibold text-primary-600'>
-						<span className='text-tertiary-normal'>Khung chương trình</span>{' '}
-						BGD
+						<span className='text-tertiary-normal'>Khung chương trình</span> BGD
 					</h1>
 					<ul className='text-title-small-strong text-left flex flex-col gap-3 my-7'>
 						<li>Thời gian nghỉ (bận) của giáo viên</li>
@@ -280,8 +260,8 @@ const LandingConstraints = () => {
 				{/* Description */}
 				<div className='w-fit h-fit max-w-[20%] bg-primary-400 absolute bottom-0 right-[10%] text-white px-[3vw] py-[4vh] flex flex-col justify-start items-end'>
 					<p className='text-body-large font-normal text-justify opacity-90'>
-						Giáo viên là một trong những nhân tố quan trọng nhất ảnh hưởng đến
-						chất lượng giảng dạy. Vậy nên chúng tôi đặc biệt quan tâm
+						Giáo viên là một trong những nhân tố quan trọng nhất ảnh hưởng đến chất lượng giảng dạy.
+						Vậy nên chúng tôi đặc biệt quan tâm
 					</p>
 				</div>
 
@@ -291,18 +271,13 @@ const LandingConstraints = () => {
 			{/* Section 5 - Timetable */}
 			<section
 				className={`absolute w-screen min-h-[500px] flex flex-row justify-end px-[10vw] inset-0 transition-all duration-500 ease-in-out transform 
-							${
-								constraintSection === 5
-									? 'opacity-100 translate-y-0'
-									: 'opacity-0 translate-y-10 z-[-1]'
-							}`}
+							${constraintSection === 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 z-[-1]'}`}
 			>
 				{/* Title */}
 				<div className='absolute w-fit h-full top-0 left-[15%] flex flex-col justify-start items-end'>
 					<h1 className='text-[2.3vw] w-full text-left'>Ràng buộc cho</h1>
 					<h1 className='text-[2.3vw] font-semibold text-primary-600'>
-						<span className='text-tertiary-normal'>Thời khóa biểu</span>{' '}
-						trường học{' '}
+						<span className='text-tertiary-normal'>Thời khóa biểu</span> trường học{' '}
 					</h1>
 					<ul className='text-title-small-strong text-left flex flex-col gap-3 my-7'>
 						<li>Thời gian nghỉ (bận) của giáo viên</li>
@@ -346,8 +321,8 @@ const LandingConstraints = () => {
 				{/* Description */}
 				<div className='w-fit h-fit max-w-[20%] bg-primary-400 absolute bottom-0 right-[10%] text-white px-[3vw] py-[4vh] flex flex-col justify-start items-end'>
 					<p className='text-body-large font-normal text-justify opacity-90'>
-						Giáo viên là một trong những nhân tố quan trọng nhất ảnh hưởng đến
-						chất lượng giảng dạy. Vậy nên chúng tôi đặc biệt quan tâm
+						Giáo viên là một trong những nhân tố quan trọng nhất ảnh hưởng đến chất lượng giảng dạy.
+						Vậy nên chúng tôi đặc biệt quan tâm
 					</p>
 				</div>
 
@@ -357,10 +332,7 @@ const LandingConstraints = () => {
 			{/* Section switcher */}
 			<div className='absolute right-0 top-0 -translate-y-5 flex flex-col items-center w-[20%] h-full py-[1%] overflow-visible'>
 				{[1, 2, 3, 4, 5].map((item, index) => (
-					<div
-						key={index}
-						className='w-fit h-[30px] flex justify-center items-center'
-					>
+					<div key={index} className='w-fit h-[30px] flex justify-center items-center'>
 						<IconButton onClick={() => switchConstraintSection(item)}>
 							<Radio
 								sx={{
