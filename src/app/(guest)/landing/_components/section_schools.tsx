@@ -14,7 +14,7 @@ const LandingSchools = () => {
 		setSchoolData(data?.result?.items);
 	}, [data]);
 	return (
-		<section className='w-screen h-[420px] relative '>
+		<section className='w-screen h-fit md:h-[420px] relative'>
 			<Image
 				className='w-[12%] absolute bottom-0 left-[2vw] object-contain'
 				src='/images/landing-decorator-4.png'
@@ -23,7 +23,7 @@ const LandingSchools = () => {
 				height={250}
 				loading='lazy'
 			/>
-			<div className='mx-[10vw] h-full md:py-[3vh] flex flex-col md:flex-row justify-between items-center'>
+			<div className='mx-[10vw] h-full py-[3vh] flex flex-col md:flex-row justify-between items-center'>
 				<div className='w-full md:w-[30%] h-full py-[5vh] flex flex-col justify-start items-start'>
 					<h4 className='text-[2rem] md:text-title-small font-semibold opacity-70 mb-[1vh] md:mb-[5vh]'>
 						Đối tác của chúng tôi
@@ -32,11 +32,11 @@ const LandingSchools = () => {
 					<h1 className='text-[1.7rem] md:text-title-1.5xl'>Đang sử dụng</h1>
 				</div>
 				<div className='w-full md:w-[70%] h-full flex flex-row justify-start items-start'>
-					<div className='w-[95%] h-full flex flex-row justify-start items-start gap-5 overflow-hidden'>
+					<div className='w-[95%] h-full flex flex-col md:flex-row justify-start items-start gap-5 overflow-hidden'>
 						{schoolData?.length ? (
 							<>
 								{schoolData.map((item, index) => (
-									<div key={index} className='w-[30%] h-full bg-primary-50'>
+									<div key={index} className='w-full md:w-[30%] h-full bg-primary-50'>
 										{isLoading ? (
 											<Skeleton
 												className='!w-full h-[60%]'
@@ -66,7 +66,7 @@ const LandingSchools = () => {
 							</>
 						) : (
 							<>
-								<div className='w-[30%] h-full bg-primary-50'>
+								<div className='w-full md:w-[30%] h-full bg-primary-50'>
 									{isLoading ? (
 										<Skeleton
 											className='!w-full h-[75%]'
@@ -90,7 +90,7 @@ const LandingSchools = () => {
 										<h1 className='text-title-small-strong'>Trường THPT chuyên Hà Nội-Amsterdam</h1>
 									</div>
 								</div>
-								<div className='w-[30%] h-full bg-primary-50'>
+								<div className='w-full md:w-[30%] h-full bg-primary-50'>
 									{isLoading ? (
 										<Skeleton
 											className='!w-full h-[75%]'
@@ -115,7 +115,7 @@ const LandingSchools = () => {
 										<h1 className='text-title-small-strong'>Trường THPT Chuyên Lê Hồng Phong</h1>
 									</div>
 								</div>
-								<div className='w-[30%] h-full bg-primary-50'>
+								<div className='w-full md:w-[30%] h-full bg-primary-50'>
 									{isLoading ? (
 										<Skeleton
 											className='!w-full h-[75%]'
@@ -143,7 +143,7 @@ const LandingSchools = () => {
 							</>
 						)}
 					</div>
-					<div className='w-[5%] h-full flex flex-col justify-between items-center'>
+					<div className='hidden w-[5%] h-full md:flex flex-col justify-between items-center'>
 						<h3 className='text-vertical rotate-180 text-title-small'>
 							TẤT CẢ ĐỐI TÁC CỦA CHÚNG TÔI
 						</h3>

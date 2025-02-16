@@ -10,30 +10,35 @@ export default function Home() {
 				className='w-full h-[30vh] flex flex-col justify-center items-center bg-cover bg-center'
 				style={{ backgroundImage: "url('/path-to-image.jpg')" }}
 			>
-				<h2 className='text-4xl font-bold text-primary-400'>Thời khóa biểu linh hoạt</h2>
-				<p className='text-xl text-gray-600 mt-2'>Học tập hiệu quả - Quản lý dễ dàng</p>
+				<h2 className='text-[8vw] md:text-[2vw] font-bold text-primary-400'>
+					Thời khóa biểu linh hoạt
+				</h2>
+				<p className='text-[5vw] md:text-xl text-gray-600 mt-2'>
+					Học tập hiệu quả - Quản lý dễ dàng
+				</p>
 				<Button
 					sx={{
+						width: { xs: '80vw', sm: 'fit-content' },
 						bgcolor: '#004e89',
 						color: 'white',
 						borderRadius: 0,
 						mt: 3,
-						py: 1,
-						px: 5,
+						py: { md: 1 },
+						px: { md: 5 },
 					}}
 				>
-					<Typography>Khám phá ngay</Typography>
+					<Typography sx={{ fontSize: { ':default': '5vw', md: 20 } }}>Khám phá ngay</Typography>
 				</Button>
 			</section>
 
 			{/* Features */}
 			<section className='w-full px-[5vw] py-12 bg-gray-100'>
-				<div className='container mx-auto grid grid-cols-2 gap-8'>
+				<div className='container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8'>
 					<div className='h-full flex flex-col justify-center items-start pb-6'>
 						<h3 className='text-title-1.5xl font-semibold mb-4 text-primary-300'>
 							Tính năng nổi bật
 						</h3>
-						<ul className='list-disc list-inside text-gray-700 text-title-large'>
+						<ul className='list-disc list-inside text-gray-700 text-title-medium md:text-title-large'>
 							<li className='py-1'>Tạo thời khóa biểu tự động và nhanh chóng</li>
 							<li className='py-1'>Dễ dàng tùy chỉnh và quản lý</li>
 							<li className='py-1'>Đồng bộ hóa dữ liệu đa nền tảng</li>
@@ -51,7 +56,7 @@ export default function Home() {
 			</section>
 
 			<section className='w-full px-[5vw] py-12 bg-secondary-light'>
-				<div className='container mx-auto grid grid-cols-2 gap-8'>
+				<div className='container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8'>
 					<div>
 						<img
 							src='/images/adjust-schedule.png'
@@ -59,13 +64,13 @@ export default function Home() {
 							className='w-full h-auto rounded shadow-md'
 						/>
 					</div>
-					<div className='h-full flex flex-col justify-center items-end pb-6'>
-						<h3 className='text-title-1.5xl font-semibold mb-4 text-primary-300 text-right'>
+					<div className='h-full flex flex-col justify-start md:justify-center items-start md:items-end pb-6'>
+						<h3 className='text-title-1.5xl font-semibold mb-4 text-primary-300 md:text-right'>
 							Cấu hình linh hoạt
 						</h3>
 						<ul
-							dir='rtl'
-							className='list-disc list-inside text-gray-700 text-title-large text-right'
+							dir='md:rtl'
+							className='list-disc list-inside text-gray-700 text-title-medium md:text-title-large md:text-right'
 						>
 							<li className='py-1'>Tùy chỉnh Thời khóa biểu</li>
 							<li className='py-1'>Cấu hình ràng buộc</li>
@@ -76,10 +81,10 @@ export default function Home() {
 			</section>
 
 			{/* Steps */}
-			<section className='w-full px-[5vw] py-12'>
-				<div className='container mx-auto text-center'>
+			<section className='w-full h-fit px-[5vw] py-12'>
+				<div className='container h-fit mx-auto text-center'>
 					<h3 className='text-2xl font-semibold mb-6'>Các bước tạo thời khóa biểu</h3>
-					<div className='grid grid-cols-3 gap-8 h-[30vh]'>
+					<div className='h-fit flex flex-col justify-start items-center md:grid md:grid-cols-3 gap-8 h-[30vh]'>
 						<div className='h-full'>
 							<img
 								src='/images/constraint-config.png'
@@ -110,10 +115,10 @@ export default function Home() {
 
 			{/* Call to Action */}
 			<section className='w-full py-12 bg-primary-50 text-center'>
-				<h3 className='text-3xl font-bold text-primary-300'>
+				<h3 className='text-[5vw] md:text-3xl font-bold text-primary-300'>
 					Bắt đầu quản lý thời khóa biểu của bạn ngay hôm nay!
 				</h3>
-				<div className='mt-6 flex flex-row gap-2 justify-center items-center'>
+				<div className='mt-6 flex flex-col md:flex-row gap-2 justify-center items-center'>
 					<Button
 						sx={{
 							bgcolor: '#004e89',

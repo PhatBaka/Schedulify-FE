@@ -44,8 +44,8 @@ export default function Home(): JSX.Element {
 			<LandingSchools />
 
 			{/* Register section */}
-			<section className='w-[80vw] h-fit max-h-[450px] bg-primary-400 mx-[10vw] mt-[3vh] flex flex-row justify-between items-center px-[4vw] py-[5vh]'>
-				<div className='w-[50%] flex flex-col justify-start items-start gap-8'>
+			<section className='relative w-full md:w-[80vw] h-fit max-h-[450px] bg-primary-400 md:mx-[10vw] mt-[3vh] flex flex-row justify-between items-center px-[4vw] py-[5vh]'>
+				<div className='w-full md:w-[50%] flex flex-col justify-start items-start gap-8'>
 					<h1 className='text-title-xl text-white'>
 						Quý thầy cô muốn sử dụng nền tảng của chúng tôi?
 					</h1>
@@ -61,7 +61,7 @@ export default function Home(): JSX.Element {
 					</Link>
 				</div>
 				<Image
-					className='w-[45%] h-full object-contain'
+					className='hidden md:block absolute top-[0%] right-0 w-[45%] h-full object-contain'
 					src='/images/landing-decorator-3.png'
 					alt='dec'
 					width={350}
@@ -70,7 +70,7 @@ export default function Home(): JSX.Element {
 				/>
 			</section>
 
-			<section className='w-screen h-fit flex justify-end items-baseline px-[10vw]'>
+			<section className='hidden md:flex w-screen h-fit justify-end items-baseline px-[10vw]'>
 				<button className='btt-btn' onClick={handleGotoTop}>
 					<div className='text'>
 						<span>Về</span>
@@ -101,14 +101,14 @@ export default function Home(): JSX.Element {
 			</section>
 
 			{/* Contact infor section */}
-			<section className='w-screen h-fit bg-primary-50 px-[10vw] py-[4vh] flex flex-row justify-between items-center'>
-				<div className='w-1/3 h-full flex flex-col justify-between items-start'>
+			<section className='w-screen h-fit bg-primary-50 px-[10vw] py-[4vh] flex flex-col md:flex-row justify-between items-center gap-[2vh] md:gap-0'>
+				<div className='w-full md:w-1/3 h-full flex flex-col justify-between items-start'>
 					<h1 className='text-title-medium-strong'>Đăng ký để nhận</h1>
 					<h1 className='text-title-medium-strong'>Những thông tin mới nhất</h1>
 				</div>
-				<div className='w-full h-full flex flex-row justify-start items-center gap-2'>
+				<div className='w-full h-full flex flex-col md:flex-row justify-start items-center '>
 					<TextField
-						className='w-[100%]'
+						className='w-[80%]'
 						label='Nhập email của thầy cô'
 						variant='filled'
 						color='success'
@@ -117,7 +117,7 @@ export default function Home(): JSX.Element {
 					<ContainedButton
 						title='Đăng ký'
 						disableRipple
-						styles='w-[15%] py-[12px] bg-primary-400 text-white'
+						styles='w-full md:w-[20%] py-[12px] bg-primary-400 text-white'
 						textStyles='text-title-small font-normal tracking-wider normal-case'
 					/>
 				</div>
