@@ -23,7 +23,7 @@ const Footer = (): JSX.Element => {
 					</div>
 
 					{/* Decorator container */}
-					<div className='decorator-container w-full h-fit bg-primary-30 '>
+					<div className='decorator-container hidden md:block w-full h-fit bg-primary-30 '>
 						<Image
 							className='w-[300px] h-auto aspect-auto'
 							src={'/images/footer-decorator.png'}

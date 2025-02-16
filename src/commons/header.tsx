@@ -96,7 +96,7 @@ const Header = () => {
 				sx={{ zIndex: 10 }}
 			>
 				<Box
-					sx={{ width: 250 }}
+					sx={{ width: '60vw' }}
 					role='presentation'
 					onClick={toggleDrawer(false)}
 					onKeyDown={toggleDrawer(false)}
